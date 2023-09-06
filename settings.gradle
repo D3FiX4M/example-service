@@ -1,5 +1,5 @@
 rootProject.name = 'user-service'
 
 include 'user-service-api'
-include 'user-service-root'
+include 'user-service-impl'
 

@@ -8,12 +8,6 @@ repositories {
     mavenCentral()
 }
 
-configurations {
-    compileOnly {
-        extendsFrom annotationProcessor
-    }
-}
-
 ext.set("springCloudVersion", "${springCloudVersion}")
 
 dependencyManagement {
@@ -23,26 +17,12 @@ dependencyManagement {
 }
 
 dependencies {
-
-    // SPRING CORE
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
-
     // SPRING CLOUD
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
     implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
-
-    // LOMBOK
-    compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
-
-    //JPA MODEL GENERATOR
-    annotationProcessor "org.hibernate:hibernate-jpamodelgen:${hibernateJpaModelGenVersion}"
-    compileOnly "org.hibernate.orm:hibernate-jpamodelgen:${hibernateJpaModelGenVersion}"
-
-    //JAVAX
-    implementation "javax.annotation:javax.annotation-api:${javaxAnnotationApiVersion}"
 }
+
+bootJar.enabled = false
 
 
 
