@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DatabaseMigrationSettings" lastSelectedDirectory="user-service-impl/src/main/resources/db/migration" />
+  <component name="DatabaseMigrationSettings" lastSelectedDirectory="account-service-impl/src/main/resources/db/migration" />
   <component name="PersistenceUnitSettings">
     <persistence-units>
       <persistence-unit name="Default" defaultSearchScope="Project">
@@ -9,7 +9,7 @@
           <package value="user_service_root" />
         </packages>
       </persistence-unit>
-      <persistence-unit moduleName="user-service.user-service-root.main" name="Default">
+      <persistence-unit moduleName="account-service.account-service-root.main" name="Default">
         <packages>
           <package value="user_service_root" />
         </packages>

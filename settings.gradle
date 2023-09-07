@@ -1,5 +1,6 @@
-rootProject.name = 'user-service'
+rootProject.name = 'account-service'
 
-include 'user-service-api'
-include 'user-service-impl'
+include 'common-service'
+include 'account-service-api'
+include 'account-service-impl'
 
